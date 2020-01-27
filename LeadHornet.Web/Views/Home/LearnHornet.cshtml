@@ -1,0 +1,215 @@
+﻿
+@{
+    ViewData["Title"] = "LearnHornet";
+    Layout = "~/Views/Shared/_LearnHornetLayout.cshtml";
+}
+<br />
+<div class="row">
+<div class="col-md-4">
+	<div class="card card-body">
+		<h2><span class="badge badge-success">Location Details</span></h2>
+		<div class="col-lg-12 mb-2">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">IP Address</span>
+				</div>
+				<input id="txtIPAddress" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" readonly="readonly">
+			</div>
+		</div>
+		<div class="col-lg-12 mb-2">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Country</span>
+				</div>
+				<input id="txtCountryName" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" readonly="readonly">
+			</div>
+		</div>
+		<div class="col-lg-12 mb-2">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Region</span>
+				</div>
+				<input id="txtRegion" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" readonly="readonly">
+			</div>
+		</div>
+		<div class="col-lg-12 mb-2">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">City</span>
+				</div>
+				<input id="txtCity" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" readonly="readonly">
+			</div>
+		</div>
+		<div class="col-lg-12 mb-2">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Latitude</span>
+				</div>
+				<input id="txtLatitude" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" readonly="readonly">
+			</div>
+		</div>
+		<div class="col-lg-12 mb-2">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">Longitude</span>
+				</div>
+				<input id="txtLongitude" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" readonly="readonly">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-md-8">
+	<div class="card card-body">
+		<form class="input-form">
+			<div class="row">
+				<h2><span class="badge badge-warning">Search</span></h2>
+				<div class="col-lg-12">
+					<div class="input-group">
+						<input id="txtLocation" type="text" class="form-control" placeholder="City, Country">
+						<div class="input-group-append">
+							<button id="btnSubmit" class="btn btn-info" type="button">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="card card-body">
+		<div class="row">
+			<h2><span class="badge badge-primary">Weather Result</span></h2>
+			<div class="col-lg-12">
+				@*<h4 class="card-title">Basic Table</h4>*@
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Main</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody id="tblBody"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="row">
+			<h2><span class="badge badge-info">Sun</span></h2>
+			<br />
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group row">
+						<label class="control-label text-right col-md-2">Sunrise</label>
+						<div class="col-md-9">
+							<input id="txtSunrise" type="text" class="form-control" placeholder="Sunrise">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group row">
+						<label class="control-label text-right col-md-2">Sunset</label>
+						<div class="col-md-9">
+							<input id="txtSunset"  type="text" class="form-control" placeholder="Sunset">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h2><span class="badge badge-info">Wind</span></h2>
+			<br />
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group row">
+						<label class="control-label text-right col-md-2">Speed</label>
+						<div class="col-md-9">
+							<input id="txtSpeed"  type="text" class="form-control" placeholder="Speed">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group row">
+						<label class="control-label text-right col-md-2">Degree</label>
+						<div class="col-md-9">
+							<input id="txtDegree"  type="text" class="form-control" placeholder="Degree">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h2><span class="badge badge-info">Other</span></h2>
+			<br />
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group row">
+						<label class="control-label text-right col-md-2">Pressure</label>
+						<div class="col-md-9">
+							<input id="txtPressure"  type="text" class="form-control" placeholder="Pressure">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group row">
+						<label class="control-label text-right col-md-2">Humidity</label>
+						<div class="col-md-9">
+							<input id="txtHumidity"  type="text" class="form-control" placeholder="Humidity">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$.ajax({
+				type: "GET",
+				url: "/api/LocationApi/GetPublicIP",
+				success: function (result) {
+					$("#txtIPAddress").val(result.ip);
+					$("#txtCountryName").val(result.country_name);
+					$("#txtRegion").val(result.region);
+					$("#txtCity").val(result.city);
+					$("#txtLatitude").val(result.latitude);
+					$("#txtLongitude").val(result.longitude);
+				},
+				error: function (err) {
+				}
+		});
+
+		$('#btnSubmit').click(function () {
+			var location = $("#txtLocation").val();
+			$.ajax({
+				type: "GET",
+				url: "/api/LocationApi/GetWeather/" + location,
+				success: function (result) {
+					console.log(result);
+					$("#tblBody tr").remove();
+					$.each(result.weather, function (key, value) {
+						//console.log(key, value);
+						$("#tblBody").append('<tr>' +
+							'<td>' + value["main"] + '</td>' +
+							'<td>' + value["description"] + '</td>' +
+							'</tr>');
+					});
+
+					$("#txtSunrise").val(result.sys.sunrise);
+					$("#txtSunset").val(result.sys.sunset);
+					$("#txtSpeed").val(result.wind.speed);
+					$("#txtDegree").val(result.wind.deg);
+					if (result.main !== null) {
+						$("#txtPressure").val(result.main.pressure);
+						$("#txtHumidity").val(result.main.humidity);
+
+					}
+				},
+				error: function () {
+					$("#tblBody tr").remove();
+				}
+			});
+		});
+	});
+</script>

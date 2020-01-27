@@ -1,0 +1,9 @@
+D:\source\william\projects\LeadHornet.Web\Core\bin\Debug\netcoreapp2.2\Core.deps.json
+D:\source\william\projects\LeadHornet.Web\Core\bin\Debug\netcoreapp2.2\Core.dll
+D:\source\william\projects\LeadHornet.Web\Core\bin\Debug\netcoreapp2.2\Core.pdb
+D:\source\william\projects\LeadHornet.Web\Core\obj\Debug\netcoreapp2.2\Core.csprojAssemblyReference.cache
+D:\source\william\projects\LeadHornet.Web\Core\obj\Debug\netcoreapp2.2\Core.csproj.CoreCompileInputs.cache
+D:\source\william\projects\LeadHornet.Web\Core\obj\Debug\netcoreapp2.2\Core.AssemblyInfoInputs.cache
+D:\source\william\projects\LeadHornet.Web\Core\obj\Debug\netcoreapp2.2\Core.AssemblyInfo.cs
+D:\source\william\projects\LeadHornet.Web\Core\obj\Debug\netcoreapp2.2\Core.dll
+D:\source\william\projects\LeadHornet.Web\Core\obj\Debug\netcoreapp2.2\Core.pdb

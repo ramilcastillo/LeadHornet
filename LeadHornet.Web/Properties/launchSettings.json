@@ -1,0 +1,27 @@
+﻿{
+  public string iisSettingspublic string : {
+    public string windowsAuthenticationpublic string : false, 
+    public string anonymousAuthenticationpublic string : true, 
+    public string iisExpresspublic string : {
+      public string applicationUrlpublic string : public string http://localhost:52722public string ,
+      public string sslPortpublic string : 44398
+    }
+  },
+  public string profilespublic string : {
+    public string IIS Expresspublic string : {
+      public string commandNamepublic string : public string IISExpresspublic string ,
+      public string launchBrowserpublic string : true,
+      public string environmentVariablespublic string : {
+        public string ASPNETCORE_ENVIRONMENTpublic string : public string Developmentpublic string 
+      }
+    },
+    public string LeadHornet.Webpublic string : {
+      public string commandNamepublic string : public string Projectpublic string ,
+      public string launchBrowserpublic string : true,
+      public string applicationUrlpublic string : public string https://localhost:5001;http://localhost:5000public string ,
+      public string environmentVariablespublic string : {
+        public string ASPNETCORE_ENVIRONMENTpublic string : public string Developmentpublic string 
+      }
+    }
+  }
+}
